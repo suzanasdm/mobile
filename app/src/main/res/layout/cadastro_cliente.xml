@@ -4,13 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="28dp"
-    android:background="#F8F9FA"> <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Cadastro"
-    android:textSize="32sp"
-    android:fontFamily="sans-serif-black"
-    android:textColor="#1A1A1A" />
+    android:background="#F8F9FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#1A1A1A" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,15 +29,17 @@
         android:orientation="vertical"
         android:background="#FFFFFF"
         android:padding="20dp"
-        android:elevation="2dp"> <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NOME COMPLETO"
-        android:textSize="11sp"
-        android:textStyle="bold"
-        android:letterSpacing="0.1"
-        android:textColor="#495057"
-        android:layout_marginBottom="8dp" />
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOME COMPLETO"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:textColor="#495057"
+            android:layout_marginBottom="8dp" />
 
         <EditText
             android:id="@+id/etNome"
@@ -71,13 +75,14 @@
             android:textSize="16sp"
             android:background="@android:drawable/editbox_background"
             android:layout_marginBottom="12dp" />
-
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" /> <Button
+        android:layout_weight="1" />
+
+    <Button
         android:id="@+id/btnSalvar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
@@ -87,6 +92,18 @@
         android:textSize="14sp"
         android:letterSpacing="0.05"
         android:backgroundTint="#212529"
-        android:elevation="4dp" />
+        android:elevation="4dp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="VOLTAR AO MENU"
+        android:textColor="#212529"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:backgroundTint="#E9ECEF"
+        style="?android:attr/borderlessButtonStyle" />
 
 </LinearLayout>

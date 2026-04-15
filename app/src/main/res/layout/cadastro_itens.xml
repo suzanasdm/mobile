@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="28dp"
+    android:background="#F8F9FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo Item"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#1A1A1A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastre produtos ou serviços no inventário."
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#6C757D"
+        android:layout_marginBottom="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CÓDIGO DO PRODUTO"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:textColor="#495057"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etCodigoItem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ex: 1001"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:textSize="16sp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESCRIÇÃO / NOME"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:textColor="#495057"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etDescricaoItem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ex: Mouse Gamer Wireless"
+            android:inputType="textCapSentences"
+            android:paddingLeft="15dp"
+            android:textSize="16sp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VALOR UNITÁRIO (R$)"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:textColor="#495057"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etValorUnitario"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="0,00"
+            android:inputType="numberDecimal"
+            android:paddingLeft="15dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnSalvarItem"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="ADICIONAR AO ESTOQUE"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:letterSpacing="0.05"
+        android:backgroundTint="#212529"
+        android:elevation="4dp" />
+
+</LinearLayout>

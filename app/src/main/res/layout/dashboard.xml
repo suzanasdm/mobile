@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F8F9FC">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema de Vendas"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#1A1C1E" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione uma operação abaixo"
+        android:textSize="14sp"
+        android:textColor="#6C757D"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CADASTROS BASE"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnIrCadastroCliente"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:text="Clientes"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#1A1C1E"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/btnIrCadastroItens"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:text="Itens de Venda"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#1A1C1E"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOVIMENTAÇÃO"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnIrPedido"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Lançar Novo Pedido"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:backgroundTint="#007BFF"
+        android:textColor="#FFFFFF"
+        android:elevation="6dp" />
+
+</LinearLayout>

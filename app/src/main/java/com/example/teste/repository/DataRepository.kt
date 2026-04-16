@@ -10,7 +10,6 @@ object DataRepository {
     val produtos = mutableListOf<ItemVenda>()
     val pedidos = mutableListOf<Pedido>()
 
-//     Auxiliar para busca de pedido (Regra 3)
     fun buscarPedido(codigo: Int): Pedido? {
         return pedidos.find { it.codigoPedido == codigo }
     }

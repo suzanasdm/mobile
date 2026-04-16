@@ -20,7 +20,7 @@
         android:text="Selecione uma operação abaixo"
         android:textSize="14sp"
         android:textColor="#6C757D"
-        android:layout_marginBottom="40dp" />
+        android:layout_marginBottom="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,7 +41,7 @@
         <Button
             android:id="@+id/btnIrCadastroCliente"
             android:layout_width="0dp"
-            android:layout_height="120dp"
+            android:layout_height="100dp"
             android:layout_weight="1"
             android:layout_marginRight="8dp"
             android:text="Clientes"
@@ -52,7 +52,7 @@
         <Button
             android:id="@+id/btnIrCadastroItens"
             android:layout_width="0dp"
-            android:layout_height="120dp"
+            android:layout_height="100dp"
             android:layout_weight="1"
             android:layout_marginLeft="8dp"
             android:text="Itens de Venda"
@@ -61,26 +61,40 @@
             android:elevation="4dp" />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MOVIMENTAÇÃO"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        android:letterSpacing="0.1"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="12dp" />
-
     <Button
         android:id="@+id/btnIrPedido"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:text="Lançar Novo Pedido"
         android:textStyle="bold"
         android:textSize="16sp"
         android:backgroundTint="#007BFF"
         android:textColor="#FFFFFF"
-        android:elevation="6dp"
-        android:drawableLeft="@drawable/ir_foreground"/>
+        android:elevation="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HISTÓRICO DE PEDIDOS"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#6C757D" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tvUltimosPedidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nenhum pedido cadastrado."
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </ScrollView>
 
 </LinearLayout>

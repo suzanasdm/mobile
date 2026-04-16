@@ -95,7 +95,6 @@
             android:textColor="#2E7D32"
             android:background="@android:drawable/editbox_background"
             android:layout_marginBottom="12dp" />
-
     </LinearLayout>
 
     <View
@@ -103,17 +102,26 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+
+
     <Button
         android:id="@+id/btnSalvarItem"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:backgroundTint="#212529"
-        android:elevation="4dp"
-        android:letterSpacing="0.05"
         android:text="ADICIONAR AO ESTOQUE"
         android:textColor="#FFFFFF"
-        android:textSize="14sp"
         android:textStyle="bold"
-        />
+        android:backgroundTint="#212529"
+        android:elevation="4dp" />
+    <Button
+        android:id="@+id/btnVoltarItem"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="VOLTAR AO  MENU"
+        android:textColor="#212529"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:backgroundTint="#E9ECEF"
+        style="?android:attr/borderlessButtonStyle"/>
 
 </LinearLayout>

@@ -224,6 +224,15 @@
             android:backgroundTint="#28A745"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="40dp"/>
-
+        <Button
+            android:id="@+id/btnVoltar1"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="VOLTAR AO MENU"
+            android:textColor="#212529"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:backgroundTint="#E9ECEF"
+            style="?android:attr/borderlessButtonStyle" />
     </LinearLayout>
 </ScrollView>

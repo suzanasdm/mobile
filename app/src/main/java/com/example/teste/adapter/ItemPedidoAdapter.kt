@@ -14,7 +14,6 @@ class ItemPedidoAdapter(context: Context, val itens: List<ItemPedido>) :
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var itemView = convertView
         if (itemView == null) {
-            // Infla um layout simples de linha (pode usar o padrão do Android para teste)
             itemView = LayoutInflater.from(context).inflate(android.R.layout.simple_list_item_2, parent, false)
         }
 

@@ -111,7 +111,7 @@ class MainActivity : ComponentActivity() {
         val etNumParcelas = findViewById<EditText>(R.id.etNumParcelas)
         val tvListaParcelas = findViewById<TextView>(R.id.tvListaParcelas)
         val lvItens = findViewById<ListView>(R.id.lvItensPedido)
-
+        val btnVoltar1 = findViewById<Button>(R.id.btnVoltar1)
         val adapter = ItemPedidoAdapter(this, pedidoAtual!!.itens)
         lvItens.adapter = adapter
         etCodPedido.setText(novoId.toString())
@@ -153,6 +153,9 @@ class MainActivity : ComponentActivity() {
             pedidoAtual!!.cliente = DataRepository.clientes[spCliente.selectedItemPosition]
             DataRepository.pedidos.add(pedidoAtual!!)
             Toast.makeText(this, "Pedido concluído!", Toast.LENGTH_SHORT).show()
+            abrirMenuPrincipal()
+        }
+        btnVoltar1.setOnClickListener {
             abrirMenuPrincipal()
         }
     }

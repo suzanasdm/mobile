@@ -2,7 +2,7 @@ package com.example.teste.model
 
 data class Pedido(
     val codigoPedido: Int,
-    val cliente: Cliente,
+    var cliente: Cliente,
     val itens: MutableList<ItemPedido> = mutableListOf(),
     var isAVista: Boolean = true,
     var qtdParcelas: Int = 1

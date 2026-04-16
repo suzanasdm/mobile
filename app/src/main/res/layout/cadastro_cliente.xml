@@ -86,14 +86,15 @@
         android:id="@+id/btnSalvar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:text="FINALIZAR CADASTRO"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:textSize="14sp"
-        android:letterSpacing="0.05"
+        android:layout_marginBottom="12dp"
         android:backgroundTint="#212529"
         android:elevation="4dp"
-        android:layout_marginBottom="12dp" />
+        android:letterSpacing="0.05"
+        android:text="FINALIZAR CADASTRO"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
 
     <Button
         android:id="@+id/btnVoltar"

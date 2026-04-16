@@ -38,6 +38,12 @@
             android:inputType="number"
             android:padding="12dp"
             android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btnBuscarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar Pedido"/>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -70,7 +76,8 @@
                 android:textSize="11sp"
                 android:textStyle="bold"
                 android:textColor="#007BFF"
-                android:layout_marginBottom="12dp"/>
+                android:layout_marginBottom="12dp"
+                />
 
             <Spinner
                 android:id="@+id/spItem"
@@ -111,10 +118,11 @@
                 android:id="@+id/btnAddItem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Adicionar Item"
                 android:layout_marginTop="12dp"
                 android:backgroundTint="#007BFF"
-                android:textColor="#FFFFFF"/>
+                android:drawableLeft="@drawable/ir_foreground"
+                android:text="Adicionar Item"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
 
         <TextView

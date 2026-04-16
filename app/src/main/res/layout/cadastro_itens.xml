@@ -107,12 +107,13 @@
         android:id="@+id/btnSalvarItem"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:backgroundTint="#212529"
+        android:elevation="4dp"
+        android:letterSpacing="0.05"
         android:text="ADICIONAR AO ESTOQUE"
         android:textColor="#FFFFFF"
-        android:textStyle="bold"
         android:textSize="14sp"
-        android:letterSpacing="0.05"
-        android:backgroundTint="#212529"
-        android:elevation="4dp" />
+        android:textStyle="bold"
+        />
 
 </LinearLayout>
